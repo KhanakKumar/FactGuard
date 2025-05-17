@@ -58,8 +58,6 @@ async def process_article_and_check_source(request: ExtractRequest):
         print(f"✅ Source Reliability: {source_reliability}")
 
         return {
-            "lemmatized_text": processed_data["lemmatized_text"],
-            "summarized_text": summarized_text,
             "veracity_result": r_f,
             "political_bias_result": political_bias_result,
             "source_reliability": source_reliability
